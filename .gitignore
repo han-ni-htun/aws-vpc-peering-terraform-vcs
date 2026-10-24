@@ -1,0 +1,45 @@
+
+# Ignore Terraform working directories and downloaded providers.
+**/.terraform/
+
+# Ignore Terraform state files and state backups.
+# State can contain sensitive infrastructure information.
+**/*.tfstate
+**/*.tfstate.*
+
+# Ignore variable files that may contain secrets.
+# Non-sensitive example files can be committed separately.
+**/*.tfvars
+**/*.tfvars.json
+!**/*.tfvars.example
+
+# Ignore saved Terraform plans and crash logs.
+**/*.tfplan
+**/crash.log
+**/crash.*.log
+
+# Ignore local Terraform override configurations.
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+# Ignore local Terraform CLI credential configuration.
+.terraformrc
+terraform.rc
+
+# Ignore local environment files that may contain credentials.
+.env
+.env.*
+
+# Ignore macOS metadata files.
+.DS_Store
+
+# Ignore locally exported Terraform plan output.
+**/*-plan.txt
+
+# Exclude private SSH keys and certificate key files.
+*.pem
+*.key
+id_rsa
+id_ed25519

@@ -16,5 +16,5 @@ variable "ssh_public_key" {
 variable "instance_type" {
   description = "EC2 instance type used for the VPC peering demonstration."
   type        = string
-  default     = "t3.micro"
+  default     = "t3.large"
 }
